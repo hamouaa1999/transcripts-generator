@@ -8,7 +8,7 @@ const bodyParser = require("body-parser");
 const OpenAI = require("openai");
 
 const app = express();
-const openai = new OpenAI({ apiKey: 'your-openai-api-key' });
+const openai = new OpenAI({ apiKey: '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' });
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -61,7 +61,7 @@ app.post("/generate-transcript", upload.single("file"), async (req, res) => {
 
 // Load SSL certificate and key
 const sslOptions = {
-    key: fs.readFileSync('./private.key'),       // Path to your private key file
+    key: fs.readFileSync('./private.key'),
     cert: fs.readFileSync('./certificate.crt')
 };
 
