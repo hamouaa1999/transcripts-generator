@@ -115,11 +115,11 @@ app.post("/generate-transcript", upload.single("file"), async (req, res) => {
     }
 });
 
-// Load SSL certificate and key
+/* // Load SSL certificate and key
 const sslOptions = {
     key: fs.readFileSync('./private.key'),
     cert: fs.readFileSync('./certificate.crt')
-};
+}; */
 
 app.listen(3005, () => {
     console.log('HTTPS Server listening on port 3005');
